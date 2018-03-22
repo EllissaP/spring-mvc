@@ -17,10 +17,8 @@ public class User
 	private String lastname;
 	private String password;
 	private String detail;
-	private String birthMonth;
-	private Gender gender;
-	private String country;
-	private boolean nonSmoking;
+	private GradeLevel grade;
+	private double gpa;
 
 	public String getName()
 	{
@@ -54,37 +52,13 @@ public class User
 	{
 		this.detail = detail;
 	}
-	public String getBirthMonth()
+	public GradeLevel getGrade()
 	{
-		return birthMonth;
+		return grade;
 	}
-	public void setBirthMonth(String birthMonth)
+	public void setGender(GradeLevel grade)
 	{
-		this.birthMonth = birthMonth;
-	}
-	public Gender getGender()
-	{
-		return gender;
-	}
-	public void setGender(Gender gender)
-	{
-		this.gender = gender;
-	}
-	public String getCountry()
-	{
-		return country;
-	}
-	public void setCountry(String country)
-	{
-		this.country = country;
-	}
-	public boolean getNonSmoking()
-	{
-		return nonSmoking;
-	}
-	public void setNonSmoking(boolean nonSmoking)
-	{
-		this.nonSmoking = nonSmoking;
+		this.grade = grade;
 	}
 	public int getId()
 	{
@@ -93,5 +67,13 @@ public class User
 	public void setId(int id)
 	{
 		this.id = id;
+	}
+	public double getGpa()
+	{
+		return gpa;
+	}
+	public void setgpa(double gpa)
+	{
+		this.gpa = gpa;
 	}
 }
